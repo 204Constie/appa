@@ -13,14 +13,14 @@
 
         <th><a href="#/contributors" ng-click="sortType = 'contributions'; sortReverse = !sortReverse"> 
         Contribution amount 
-        <span ng-show="sortType == 'contributions' && sortReverse" class="glyphicon glyphicon-triangle-bottom""></span>
-        <span ng-show="sortType == 'contributions' && !sortReverse" class="glyphicon glyphicon-triangle-top""></span>
+        <span ng-show="sortType == 'contributions' && sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+        <span ng-show="sortType == 'contributions' && !sortReverse" class="glyphicon glyphicon-chevron-up"></span>
         </th>
 
         <th><a href="#/contributors" ng-click="sortType = 'team'; sortReverse = !sortReverse"> 
         Team 
-        <span ng-show="sortType == 'team' && sortReverse" class="glyphicon glyphicon-triangle-bottom""></span>
-        <span ng-show="sortType == 'team' && !sortReverse" class="glyphicon glyphicon-triangle-top""></span>
+        <span ng-show="sortType == 'team' && sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+        <span ng-show="sortType == 'team' && !sortReverse" class="glyphicon glyphicon-chevron-up"></span>
         </th>
       </tr>
     </thead>
