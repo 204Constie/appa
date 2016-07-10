@@ -1,6 +1,6 @@
 /* line 4, ../../app/styles/main.scss */
 .jumbotron {
-  background-image: url('/images/paisley.png');
+  background-image: url('./images/paisley.png');
   background-attachment: fixed;
 }
 
