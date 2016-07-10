@@ -1,0 +1,36 @@
+
+  <div class="jumbotron">
+    <h1>X Formation contributors stats</h1>
+    
+    <!-- <p><a class="btn btn-lg btn-success" ng-href="#/">Button<span class="glyphicon glyphicon-ok"></span></a></p> -->
+  </div>
+
+  <div class="container">
+    <table class="table">
+    <thead>
+      <tr>
+        <th>Contributor</th>
+
+        <th><a href="#/contributors" ng-click="sortType = 'contributions'; sortReverse = !sortReverse"> 
+        Contribution amount 
+        <span ng-show="sortType == 'contributions' && sortReverse" class="glyphicon glyphicon-triangle-bottom""></span>
+        <span ng-show="sortType == 'contributions' && !sortReverse" class="glyphicon glyphicon-triangle-top""></span>
+        </th>
+
+        <th><a href="#/contributors" ng-click="sortType = 'team'; sortReverse = !sortReverse"> 
+        Team 
+        <span ng-show="sortType == 'team' && sortReverse" class="glyphicon glyphicon-triangle-bottom""></span>
+        <span ng-show="sortType == 'team' && !sortReverse" class="glyphicon glyphicon-triangle-top""></span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="contributor in contributors | orderBy:sortType:sortReverse">
+        <th scope="row">{{contributor.nickname}}</th>
+        <td>{{contributor.contributions}}</td>
+        <td>{{contributor.team}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+  </div>
