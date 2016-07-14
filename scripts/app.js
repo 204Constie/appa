@@ -17,13 +17,8 @@ angular
               console.log(response.data.items);
               return response.data.items;
             });
-<<<<<<< HEAD
             return promise;
           }
-=======
-          return promise;
-         }
->>>>>>> gh-pages
         }
       })
       .when('/contributors', {
@@ -36,13 +31,8 @@ angular
               console.log(response.data);
               return response.data;
             });
-<<<<<<< HEAD
             return promise;
-          }
-=======
-          return promise;
          }
->>>>>>> gh-pages
         }
       })
       .otherwise({
