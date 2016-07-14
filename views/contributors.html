@@ -1,6 +1,6 @@
 
   <div class="jumbotron">
-    <h1>X Formation contributors stats</h1>
+    <p id="header">X Formation contributors stats</p>
     
     <!-- <p><a class="btn btn-lg btn-success" ng-href="#/">Button<span class="glyphicon glyphicon-ok"></span></a></p> -->
   </div>
@@ -13,14 +13,14 @@
 
         <th><a href="#/contributors" ng-click="sortType = 'contributions'; sortReverse = !sortReverse"> 
         Contribution amount 
-        <span ng-show="sortType == 'contributions' && sortReverse" class="glyphicon glyphicon-triangle-bottom""></span>
-        <span ng-show="sortType == 'contributions' && !sortReverse" class="glyphicon glyphicon-triangle-top""></span>
+        <span ng-show="sortType == 'contributions' && sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+        <span ng-show="sortType == 'contributions' && !sortReverse" class="glyphicon glyphicon-chevron-up"></span>
         </th>
 
         <th><a href="#/contributors" ng-click="sortType = 'team'; sortReverse = !sortReverse"> 
         Team 
-        <span ng-show="sortType == 'team' && sortReverse" class="glyphicon glyphicon-triangle-bottom""></span>
-        <span ng-show="sortType == 'team' && !sortReverse" class="glyphicon glyphicon-triangle-top""></span>
+        <span ng-show="sortType == 'team' && sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+        <span ng-show="sortType == 'team' && !sortReverse" class="glyphicon glyphicon-chevron-up"></span>
         </th>
       </tr>
     </thead>
