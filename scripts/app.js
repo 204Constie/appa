@@ -17,8 +17,8 @@ angular
               console.log(response.data.items);
               return response.data.items;
             });
-          return promise;
-         }
+            return promise;
+          }
         }
       })
       .when('/contributors', {
@@ -31,8 +31,8 @@ angular
               console.log(response.data);
               return response.data;
             });
-          return promise;
-         }
+            return promise;
+          }
         }
       })
       .otherwise({
