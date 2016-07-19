@@ -11,7 +11,7 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
         resolve: {
-            async: function($http) {
+            repositories: function($http) {
               var promise = $http.get('https://api.github.com/search/repositories?q=user:X-Formation+fork:true').then(function(response){
               
               console.log(response.data.items);
@@ -25,8 +25,8 @@ angular
         templateUrl: 'views/contributors.html',
         controller: 'ContributorsCtrl',
         resolve: {
-            async: function($http) {
-              var promise = $http.get('https://www.x-formation.com/wp-content/uploads/2014/09/contributors.json').then(function(response){
+            contributors: function($http) {
+              var promise = $http.get('http://localhost:8080/https://www.x-formation.com/wp-content/uploads/2014/09/contributors.json').then(function(response){
               
               console.log(response.data);
               return response.data;
