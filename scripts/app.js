@@ -26,7 +26,7 @@ angular
         controller: 'ContributorsCtrl',
         resolve: {
             contributors: function($http) {
-              var promise = $http.get('https://localhost:8080/https://www.x-formation.com/wp-content/uploads/2014/09/contributors.json').then(function(response){
+              var promise = $http.get('http://localhost:8080/https://www.x-formation.com/wp-content/uploads/2014/09/contributors.json').then(function(response){
               
               console.log(response.data);
               return response.data;
