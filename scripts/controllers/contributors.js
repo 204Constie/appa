@@ -5,6 +5,6 @@ angular.module('anApp')
     $scope.sortType = 'contributions';
     $scope.sortReverse = 'false';
 
-    $scope.contributors = contributors.files.xfcontributors.json;
+    $scope.contributors = contributors.files.xfcontributors;
 
   });
