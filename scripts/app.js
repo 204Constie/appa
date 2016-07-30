@@ -28,8 +28,8 @@ angular
             contributors: function($http) {
               var promise = $http.get('https://api.github.com/gists/bcea5b70693143a7f696f3542b88edf7').then(function(response){
               
-              console.log(response.data);
-              return response.data;
+              console.log(response.files.xfcontributors.content);
+              return response.files.xfcontributors.content;
             });
             return promise;
          }
