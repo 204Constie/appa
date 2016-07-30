@@ -28,7 +28,7 @@ angular
             contributors: function($http) {
               var promise = $http.get('https://api.github.com/gists/bcea5b70693143a7f696f3542b88edf7').then(function(response){
               
-              console.log(response.files.xfcontributors.content);
+              console.log(response.files);
               return response.files.xfcontributors.content;
             });
             return promise;
