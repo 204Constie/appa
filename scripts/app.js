@@ -26,7 +26,7 @@ angular
         controller: 'ContributorsCtrl',
         resolve: {
             contributors: function($http) {
-              var promise = $http.get('https://github.com/204Constie/appa/blob/gh-pages/xfcontributors.json').then(function(response){
+              var promise = $http.get('https://api.github.com/gists/bcea5b70693143a7f696f3542b88edf7').then(function(response){
               
               console.log(response.data);
               return response.data;
